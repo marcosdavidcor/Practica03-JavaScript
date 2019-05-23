@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" /> 
+        <script type="text/javascript">
+            enviar();
+            sumar();
+            limp();
+            calcular();
+            restar();
+            var total = 0;
+            var opc = '';
+            function enviar(numero){
+                var txtResultado = document.getElementById("txtResultado");
+                if (txtResultado != null) {
+                txtResultado.value += numero;                
+                }
+            }
+            
+            function sumar(){ 
+                var txtResultado = document.getElementById("txtResultado");
+                if (txtResultado != null) {
+                total = parseFloat(txtResultado.value);
+                txtResultado.value = '';
+                }
+                opc = '+'
+            }
+            
+            function restar(){ 
+                var txtResultado = document.getElementById("txtResultado");
+                if (txtResultado != null) {
+                total = parseFloat(txtResultado.value);
+                txtResultado.value = '';
+                }
+                opc = '-'
+            }
+            
+            function multiplicar(){ 
+                var txtResultado = document.getElementById("txtResultado");
+                if (txtResultado != null) {
+                total = parseFloat(txtResultado.value);
+                txtResultado.value = '';
+                }
+                opc = '*'
+            }
+            
+            function dividir(){ 
+                var txtResultado = document.getElementById("txtResultado");
+                if (txtResultado != null) {
+                total = parseFloat(txtResultado.value);
+                txtResultado.value = '';
+                }
+                opc = '/'
+            }
+            
+            function limp(){
+                var txtResultado = document.getElementById("txtResultado");
+                txtResultado.value = '';
+            }
+            
+            function calcular(){
+                var txtResultado = document.getElementById("txtResultado");
+                if (txtResultado != null) {
+                    switch(opc){
+                        case '+':
+                            total += parseFloat(txtResultado.value);
+                            txtResultado.value = total;
+                            break;
+                        case '-':
+                            total -= parseFloat(txtResultado.value);
+                            txtResultado.value = total;
+                            break;
+                        case '*':
+                            total = total * parseFloat(txtResultado.value);
+                            txtResultado.value = total;
+                            break;
+                        case '/':
+                            total = total / parseFloat(txtResultado.value);
+                            txtResultado.value = total;
+                            break;
+                    }
+                            total = 0;
+                }
+            }
+        
+        </script>
+    </head>
+    <body>
+        
+        <header class="cabecera">
+            <h1>CALCULADORA</h1>
+        </header>
+        <hr>
+        <div>
+        </div>
+        <div class="centro">
+            <form id="formularioCalculadora">
+                <textarea rows="1" cols="30" id="txtResultado"></textarea><br>
+                <input type="button" value="1" id="uno" onclick="enviar(1)">
+                <input type="button" value="2" id="dos" onclick="enviar(2)">
+                <input type="button" value="3" id="tres" onclick="enviar(3)">
+                <input type="button" value="4" id="cuatro" onclick="enviar(4)">
+                <input type="button" value="5" id="cinco" onclick="enviar(5)">
+                <input type="button" value="6" id="seis" onclick="enviar(6)">
+                <input type="button" value="7" id="siete" onclick="enviar(7)">
+                <input type="button" value="8" id="ocho" onclick="enviar(8)">
+                <input type="button" value="9" id="nueve" onclick="enviar(9)">              
+                <input type="button" value="0" id="cero" onclick="enviar(0)">
+                <input type="button" value="+" id="mas" onclick="sumar()">
+                <input type="button" value="-" id="menos" onclick="restar()">
+                <input type="button" value="*" id="por" onclick="multiplicar()">
+                <input type="button" value="/" id="dividido" onclick="dividir()">
+                <input type="button" value="." id="punto" onclick="enviar('.')">
+                <input type="button" value="C" id="limpiar" onclick="limp()">
+                <input type="button" value="=" id="igual" onclick="calcular()">
+                
+            </form>
+        </div>
+                        
+    </body> 
+    
+    
+</html>

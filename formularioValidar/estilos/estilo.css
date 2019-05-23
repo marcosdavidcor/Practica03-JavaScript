@@ -1,0 +1,144 @@
+@font-face{
+    font-family:principal;
+    src:URL(fonts/lato/Lato-Regular.ttf);
+}
+
+html{
+background-image:url(../images/fondo.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-attachment:fixed;
+
+}
+#formularioRegistro{
+
+    width:450px;
+    background-color:rgba(0, 0, 0.51, 0.51);
+    padding:35px 45px 35px 50px;
+    margin:auto;
+    margin-top:65px;
+    border-radius:9px
+}
+.input{
+    color:#3c3c3c;
+    font-family:pricipal;
+    font-size:18px;
+    line-height:22px;
+    background-color:whitesmoke;
+    padding:13x 13px 13px 54px; 
+    margin-bottom:10px;
+    width:100%;
+    box-sizing:border-box;   
+
+}
+
+.input:focus{
+
+    background-color: bisque;
+    border: 3px solid #3498db;
+    color:#1b8f31;
+    padding: 13px 13px 13px 54px;
+
+}
+
+/*images*/
+#cedula{
+
+    background-image:url(../images/cedula.jpg);
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+
+}
+#nombre{
+
+    background-image:url(../images/persona.jpg);
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+
+}
+#apellido{
+
+    background-image:url(../images/persona.jpg);
+    background-size: 30px 30px;
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+
+}
+#direccion{
+
+    background-image:url(../images/direccion.jpg);
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+
+}
+
+#telefono{
+
+    background-image:url(../images/fono.jpg);
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+
+}
+#fechana{
+
+    background-image:url(../images/fecha.jpg);
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+
+}
+#correo{
+
+    background-image:url(../images/correo.jpg);
+    background-size: 30px 30px;
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+
+}
+#enviar{
+
+    font-family:principal;
+    float: left;
+    width: 100%;
+    border: #fff solid 4px;
+    cursor: progress;
+    background-color: cadetblue;
+    font-size: 15px;
+    font-weight: 670px;
+    padding-top: 22px;
+    -webkit-transition: all o.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3;
+}
+
+#enviar:hover{
+    color:#000;
+    background-color: rgba(0,0,0,0);
+}
+
+.transicion{
+
+    width: 0px;
+    height: 74px;
+    background-color: #3498db;
+    transition: .7s ease;
+    -webkit-transition: all o.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: .7s ease;
+    -ms-transition: .7s ease;
+
+}
+
+.enviar:hover .transicion{
+
+    width: 100%;
+    background-color: #33de80;
+
+}

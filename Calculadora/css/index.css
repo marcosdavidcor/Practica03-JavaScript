@@ -1,0 +1,49 @@
+html{
+    background-color: hsl(180, 36%, 17%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 2em
+}
+
+h1{
+    text-align: center;
+}
+div{
+    text-align: center;
+    border-style: double;
+    border-width: 6px;
+}
+#formularioCalculadora{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: double;
+    border-width: 5px;
+}
+
+  
+#formularioCalculadora input{
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    color:black;
+    background-color:gray;
+    border-spacing: 60%;
+    font-size: 20px;
+    border-style: double;
+    border-width: 6px;
+}
+
+#formularioCalculadora input:hover{
+    text-align: center;
+    background-color:white; 
+}
+#txtResultado{
+    text-align: center;
+    background-color:rgb(96, 96, 119);
+    color:rgb(68, 66, 66);
+    font-size: 30px;
+}
+
+hr{
+    width:50%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Formulario Registro</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="estilos/estilo.css" rel="stylesheet" />
+
+</header>
+
+<body>
+
+    <div id="formularioRegistro">
+        <form action="#" method="post" onsubmit="return validarCamposObligatorios(this)">
+
+            <p class="cedula">
+                <input type="text" class="input" placeholder="Cedula" id="cedula" onkeypress="return validarCedula()"
+                    name="cedula" autocomplete="off">
+            </p>
+            <p class="nombre">
+                <input type="text" class="input" placeholder="Nombre: (ingrese dos nombres)" id="nombre"
+                    onkeypress="return validarLetras(event)" name="nombre" autocomplete="off">
+            </p>
+            <p class="apellido">
+                <input type="text" class="input" placeholder="Apellido: (ingrese dos apellidos)" id="apellido"
+                    onkeypress="return validarLetrasA(event)" name="apellido" autocomplete="off">
+            </p>
+            <p class="direccion">
+                <input type="text" class="input" placeholder="Direccion" id="direccion"
+                    onkeypress="return validarLetrasD(event)" name="direccion" autocomplete="off">
+            </p>
+            <p class="telefono">
+                <input type="text" class="input" placeholder="Telefono" id="telefono"
+                    onkeypress="return validarNumeros(event)" name="telefono" autocomplete="off">
+            </p>
+            <p class="fechana">
+                <input type="text" class="input" placeholder="FechaNacimiento DDMMYYYY" id="fechana"
+                    onkeypress="return validarFecha(event)" name="fechana" autocomplete="off">
+            </p>
+            <p class="correo">
+                <input type="text" class="input" placeholder="Correo" id="correo" onkeypress="return validarCorreo2()"
+                    name="correo" autocomplete="off">
+            </p>
+
+            <div class="enviar">
+
+                <input type="submit" value="Enviar" id="enviar" />
+                <div class="transicion"></div>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="validar/validaciones.js">
+
+</script>
+
+</html>
